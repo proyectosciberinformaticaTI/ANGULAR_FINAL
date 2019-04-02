@@ -1,0 +1,13 @@
+<div class="example-container">
+  <mat-form-field>
+    <input matInput placeholder="Nombres" [(ngModel)]="paciente.nombre">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Apellidos" [(ngModel)]="paciente.apellido">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Edad" [(ngModel)]="paciente.edad">
+  </mat-form-field>
+</div>
+<button mat-raised-button color="primary" (click)="operar()">Aceptar</button>
+<button mat-raised-button color="accent" (click)="cancelar()">Cancelar</button>
